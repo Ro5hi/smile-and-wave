@@ -1,8 +1,8 @@
 const { hexZeroPad } = require("ethers/lib/utils")
 
 const main = async () => {
-    const waveContractFactory = await hexZeroPad.ethers.getContractFactory("WavePortal");
-    const waveContact = await waveContractFactory.deploy();
+    const waveContractFactory = await hre.ethers.getContractFactory("WavePortal");
+    const waveContract = await waveContractFactory.deploy();
     await waveContractFactory.deployed();
     console.log("Contract Deployed To:", waveContract.address);
 }
