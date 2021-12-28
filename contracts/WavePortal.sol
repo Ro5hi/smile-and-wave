@@ -8,7 +8,7 @@ contract WavePortal {
     uint256 totalWaves;
 
     constructor() {
-        console.log("I am a contract!");
+        console.log("Send waves~");
     }
 
     function wave() public {
